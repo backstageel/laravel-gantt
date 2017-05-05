@@ -35,27 +35,30 @@ The model to display in the Gantt Chart will need to have properties of `label`,
 * `end` is a date or datetime (will need to pass this as a YYYY-MM-DD format)
 
 ```php
-/**
- * Get your model items however you deem necessary
- */
-$select = 'title as label, DATE_FORMAT(start, \'%Y-%m-%d\') as start, DATE_FORMAT(end, \'%Y-%m-%d\') as end';
-$projects = \App\Project::select(\Illuminate\Support\Facades\DB::raw($select))
-                ->orderBy('start', 'asc')
-                ->orderBy('end', 'asc')
-                ->get();
-    
+
 /**
  *  You'll pass data as an array in this format:
- *  [
- *    [ 
- *      'label' => 'The item title',
- *      'start' => '2016-10-08',
- *      'end'   => '2016-10-14'
- *    ]
- *  ]
+    $test_array = [
+                      [
+                        'label' => 'The item title',
+                          'date' => [
+                             [
+                                 'start' => '2016-10-08',
+                                 'end'   => '2016-10-14',
+                                 'class' => '',
+                             ],
+                             [
+                                 'start' => '2016-10-16',
+                                 'end'   => '2016-10-19',
+                                 'class' => '',
+                             ]
+                         ]
+ 
+                     ]
+                 ];
  */
  
-$gantt = new Swatkins\LaravelGantt\Gantt($projects->toArray(), array(
+$gantt = new Swatkins\LaravelGantt\Gantt($test_array, array(
     'title'      => 'Demo',
     'cellwidth'  => 25,
     'cellheight' => 35
