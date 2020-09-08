@@ -2,7 +2,7 @@
 
 namespace Backstageel\LaravelGantt;
 
-use Swatkins\LaravelGantt\Calendar\Calendar;
+use Backstageel\LaravelGantt\Calendar\Calendar;
 
 class Gantt {
 

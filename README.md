@@ -17,7 +17,7 @@ composer require swatkins/laravel-gantt
 After updating composer, add the ServiceProvider to the providers array in config/app.php
 
 ```php
-Swatkins\LaravelGantt\GanttServiceProvider::class,
+Backstageel\LaravelGantt\GanttServiceProvider::class,
 ```
 
 Copy the package css file to your local css with the publish command:
@@ -58,7 +58,7 @@ The model to display in the Gantt Chart will need to have properties of `label`,
                  ];
  */
  
-$gantt = new Swatkins\LaravelGantt\Gantt($test_array, array(
+$gantt = new Backstageel\LaravelGantt\Gantt($test_array, array(
     'title'      => 'Demo',
     'cellwidth'  => 25,
     'cellheight' => 35
