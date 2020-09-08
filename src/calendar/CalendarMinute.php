@@ -1,6 +1,6 @@
 <?php
 
-namespace Swatkins\LaravelGantt\Calendar;
+namespace Backstageel\LaravelGantt\Calendar;
 
 class CalendarMinute extends CalendarObj {
     

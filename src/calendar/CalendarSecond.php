@@ -1,6 +1,6 @@
 <?php
 
-namespace Swatkins\LaravelGantt\Calendar;
+namespace Backstageel\LaravelGantt\Calendar;
 
 class CalendarSecond extends CalendarObj {
     

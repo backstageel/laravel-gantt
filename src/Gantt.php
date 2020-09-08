@@ -1,6 +1,6 @@
 <?php
 
-namespace Swatkins\LaravelGantt;
+namespace Backstageel\LaravelGantt;
 
 use Swatkins\LaravelGantt\Calendar\Calendar;
 
