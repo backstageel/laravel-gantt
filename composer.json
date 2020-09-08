@@ -1,5 +1,5 @@
 {
-    "name": "adzon/laravel-gantt",
+    "name": "backstageel/laravel-gantt",
     "description": "Laravel package to display items within a Gantt Chart.",
     "type": "library",
     "license": "MIT",
